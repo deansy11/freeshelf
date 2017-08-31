@@ -1,7 +1,7 @@
 <h1>Login</h1>
 
 <% if current_user %>
-  You are now logged in as: <%= current_user.email %>.
+  You are now logged in as: <%= current_user.email %> .
   <%= link_to "Log Out", session_path, method: :delete %>.
 <% else %>
   You are not logged in. Need an account? <%= link_to "Sign up", new_users_path %>.
